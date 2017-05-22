@@ -1,3 +1,5 @@
-<resources>
+<resources
+    xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Shazam</string>
+    <string name="f_error_retrieving_chart" formatted="false">Error retrieving chart: <xliff:g example="no network" id="error_message">%1$s</xliff:g></string>
 </resources>
