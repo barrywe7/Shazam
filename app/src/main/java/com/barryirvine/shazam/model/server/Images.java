@@ -2,12 +2,12 @@ package com.barryirvine.shazam.model.server;
 
 import com.google.gson.annotations.SerializedName;
 
-class Images {
+public class Images {
 
     @SerializedName("default")
     private String mUrl;
 
-    String getUrl() {
+    public String getUrl() {
         return mUrl;
     }
 }
