@@ -15,7 +15,7 @@
             android:clipToPadding="false"
             android:splitMotionEvents="false"
             app:layoutManager="GridLayoutManager"
-            app:spanCount="1"/>
+            app:spanCount="@integer/chart_grid_columns"/>
 
     </android.support.v4.widget.SwipeRefreshLayout>
 </layout>
