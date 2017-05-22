@@ -16,7 +16,7 @@ public class ChartEntryViewModelTest {
     @Before
     public void setUp() throws Exception {
         mChartEntry = MockChartEntryUtils.createMockChartEntry();
-        mChartEntryViewModel = new ChartEntryViewModel(mChartEntry);
+        mChartEntryViewModel = new ChartEntryViewModel(mChartEntry, null);
     }
 
     @Test

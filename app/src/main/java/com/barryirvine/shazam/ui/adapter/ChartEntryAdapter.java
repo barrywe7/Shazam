@@ -47,7 +47,7 @@ public class ChartEntryAdapter extends RecyclerView.Adapter<ChartEntryAdapter.Vi
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder holder, final int position) {
-        holder.bind(new ChartEntryViewModel(mItems.get(position)));
+        holder.bind(new ChartEntryViewModel(mItems.get(position), mPresenter));
     }
 
     @Override
