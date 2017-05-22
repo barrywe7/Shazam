@@ -1,6 +1,6 @@
 # Shazam Recruitment Exercise App
 The Shazam app was undertaken as part of a recruitment exercise
-## Running, Building & Testing Flickr Viewr
+## Running, Building & Testing Shazam
  - Clone the GitHub repository
  - Import the Shazam project into Android Studio (it was developed using version 2.3.2)
  - Run using a device or emulator at API level 21 or above
