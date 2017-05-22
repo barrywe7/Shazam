@@ -1,6 +1,8 @@
 package com.barryirvine.shazam.ui.contract;
 
+import android.app.Activity;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.widget.ImageView;
 
 import com.barryirvine.shazam.model.local.ChartEntry;
 
@@ -26,6 +28,8 @@ public interface MainContract {
         void setClicksEnabled(final boolean enabled);
 
         boolean areClicksEnabled();
+
+        void openItem(final Activity activity, final ImageView imageView, final ChartEntry chartEntry);
 
     }
 }

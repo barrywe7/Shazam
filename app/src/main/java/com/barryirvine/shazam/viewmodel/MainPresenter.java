@@ -1,7 +1,12 @@
 package com.barryirvine.shazam.viewmodel;
 
+import android.app.Activity;
+import android.widget.ImageView;
+
 import com.barryirvine.shazam.interactors.InteractorContract;
 import com.barryirvine.shazam.model.local.ChartEntry;
+import com.barryirvine.shazam.ui.UiUtils;
+import com.barryirvine.shazam.ui.activity.TrackDetailsActivity;
 import com.barryirvine.shazam.ui.contract.MainContract;
 
 import java.util.Collections;
@@ -78,5 +83,11 @@ public class MainPresenter implements MainContract.Presenter {
     @Override
     public boolean areClicksEnabled() {
         return mItemsClickable;
+    }
+
+    @Override
+    public void openItem(final Activity activity, final ImageView imageView, final ChartEntry chartEntry) {
+        TrackDetailsActivity.start(activity, chartEntry, UiUtils.getArtworkActivityOptions(activity, imageView));
+        setClicksEnabled(false);
     }
 }
