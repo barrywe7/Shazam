@@ -12,9 +12,11 @@ import com.barryirvine.shazam.App;
 import com.barryirvine.shazam.R;
 import com.barryirvine.shazam.databinding.FragmentChartBinding;
 import com.barryirvine.shazam.model.local.ChartEntry;
+import com.barryirvine.shazam.ui.adapter.ChartEntryAdapter;
 import com.barryirvine.shazam.ui.contract.MainContract;
 import com.squareup.picasso.Picasso;
 
+import java.util.Collections;
 import java.util.List;
 
 import javax.inject.Inject;
@@ -26,6 +28,7 @@ public class ChartFragment extends Fragment implements MainContract.View {
     @Inject
     MainContract.Presenter mPresenter;
     private FragmentChartBinding mBinding;
+    private ChartEntryAdapter mAdapter;
 
     public ChartFragment() {
     }
@@ -74,7 +77,8 @@ public class ChartFragment extends Fragment implements MainContract.View {
         super.onViewCreated(view, savedInstanceState);
         mBinding = DataBindingUtil.bind(view);
         if (savedInstanceState == null) {
-            // TODO: Create empty adapter
+            mAdapter = new ChartEntryAdapter(Collections.emptyList(), mPicasso, mPresenter);
+            mBinding.recyclerView.setAdapter(mAdapter);
         } else {
             //TODO: Update recyclerview with saved state
         }
@@ -88,7 +92,8 @@ public class ChartFragment extends Fragment implements MainContract.View {
 
     @Override
     public void onDataLoaded(final List<ChartEntry> chartEntries) {
-        //TODO: Create adapter and update recyclerview
+        mAdapter = new ChartEntryAdapter(chartEntries, mPicasso, mPresenter);
+        mBinding.recyclerView.setAdapter(mAdapter);
     }
 
     @Override
