@@ -1,0 +1,168 @@
+// Simplified from the actual output to only include one track entry
+
+{
+  "actions": [
+    {
+      "id": "352190393",
+      "name": "track:352190393",
+      "type": "track"
+    }
+  ],
+  "alias": "im-the-one",
+  "campaign": {
+    "id": "connect:shazam_ads_usa:NAR_0504_BeatShazam_TopTracks_20170504_BClvXwNiu"
+  },
+  "heading": {
+    "subtitle": "DJ Khaled Feat. Justin Bieber & Quavo & Chance The Rapper & Lil Wayne",
+    "title": "I'm The One"
+  },
+  "images": {
+    "default": "https://images.shazam.com/coverart/t352190393_s400.jpg"
+  },
+  "key": "352190393",
+  "properties": {
+    "numberOfShazams": "20"
+  },
+  "share": {
+    "href": "https://shz.am/t352190393",
+    "html": "https://www.shazam.com/snippets/email-share/352190393?lang=en&country=US",
+    "image": "https://images.shazam.com/coverart/t352190393_s400.jpg",
+    "subject": "I'm The One - DJ Khaled Feat. Justin Bieber & Quavo & Chance The Rapper & Lil Wayne",
+    "text": "I used Shazam to discover I'm The One by DJ Khaled Feat. Justin Bieber & Quavo & Chance The Rapper & Lil Wayne.",
+    "twitter": "I used Shazam to discover I'm The One by DJ Khaled Feat. Justin Bieber & Quavo & Chance The Rapper & Lil Wayne."
+  },
+  "stores": {
+    "amazon": {
+      "actions": [
+        {
+          "type": "intent",
+          "uri": "intent:#Intent;action=com.amazon.mp3.action.EXTERNAL_EVENT;S.com.amazon.mp3.extra.ALBUM_ASIN=B071158K2F;S.com.amazon.mp3.extra.TRACK_ASIN=B071DNHCW6;S.com.amazon.mp3.extra.EXTERNAL_EVENT_TYPE=com.amazon.mp3.type.SHOW_ALBUM_DETAIL;end"
+        },
+        {
+          "type": "uri",
+          "uri": "http://www.amazon.com/gp/aw/d/B071DNHCW6?tag=shazam02-20"
+        }
+      ],
+      "coverarturl": "https://images.shazam.com/coverart/t352190393-a0886446468259_s400.jpg",
+      "previewurl": "http://www.amazon.com/gp/dmusic/aws/sampleTrack.html?clientid=Shazam&ASIN=B071DNHCW6",
+      "productid": "B071158K2F",
+      "trackid": "B071DNHCW6"
+    },
+    "apple": {
+      "actions": [
+        {
+          "type": "uri",
+          "uri": "https://itunes.apple.com/us/album/im-one-feat-justin-bieber-quavo-chance-rapper-lil-wayne/id1229872357?i=1229873066&uo=5&at=1001l4DI&ct=5348615A-616D-3235-3830-44754D6D5973&app=music&upsell=true"
+        }
+      ],
+      "coverarturl": "https://images.shazam.com/coverart/t352190393-b1229873066_s400.jpg",
+      "explicit": true,
+      "previewurl": "http://audio.itunes.apple.com/apple-assets-us-std-000001/AudioPreview117/v4/2c/0d/8e/2c0d8ed1-6a64-fb72-068b-f32d2a6383fa/mzaf_6741166263285161221.plus.aac.p.m4a",
+      "productid": "1229872357",
+      "trackid": "1229873066"
+    },
+    "google": {
+      "actions": [
+        {
+          "type": "intent",
+          "uri": "intent://play.google.com/store/music/album?id=Bic7eqydl2y7dywozzwrvrmjx7m&tid=song-Tx5xdj6iyjjkgraor7bm242ao7m&PAffiliateID=100l3pk#Intent;scheme=https;action=android.intent.action.VIEW;package=com.android.vending;end"
+        },
+        {
+          "type": "uri",
+          "uri": "https://play.google.com/store/music/album?id=Bic7eqydl2y7dywozzwrvrmjx7m&tid=song-Tx5xdj6iyjjkgraor7bm242ao7m&PAffiliateID=100l3pk"
+        }
+      ],
+      "coverarturl": "https://images.shazam.com/coverart/t352190393-gTx5xdj6iyjjkgraor7bm242ao7m_s400.jpg",
+      "previewurl": "https://redirector.googlevideo.com/videoplayback?id=549488af234380b6&itag=25&source=skyjam&begin=48000&len=28000&ratebypass=yes&ip=0.0.0.0&ipbits=0&expire=1501232980&sparams=id,itag,source,begin,len,ratebypass,ip,ipbits,expire&signature=6F1DB72215484D1CDF12E790745B1F90DA561676.2B8C74540DD37A45977A8964FD1FFDB49643859B&key=sj3",
+      "productid": "Bic7eqydl2y7dywozzwrvrmjx7m",
+      "trackid": "Tx5xdj6iyjjkgraor7bm242ao7m"
+    },
+    "itunes": {
+      "actions": [
+        {
+          "type": "uri",
+          "uri": "https://itunes.apple.com/us/album/im-one-feat-justin-bieber-quavo-chance-rapper-lil-wayne/id1229872357?i=1229873066&uo=5&at=11l3eE&ct=5348615A-616D-3235-3830-44754D6D5973&app=itunes"
+        }
+      ],
+      "coverarturl": "https://images.shazam.com/coverart/t352190393-i1229873066_s400.jpg",
+      "explicit": true,
+      "previewurl": "http://audio.itunes.apple.com/apple-assets-us-std-000001/AudioPreview117/v4/2c/0d/8e/2c0d8ed1-6a64-fb72-068b-f32d2a6383fa/mzaf_6741166263285161221.plus.aac.p.m4a",
+      "productid": "1229872357",
+      "trackid": "1229873066"
+    }
+  },
+  "streams": {
+    "googleallaccess": {
+      "actions": [
+        {
+          "name": "stream:googleallaccess:androiddeeplink",
+          "type": "uri",
+          "uri": "googleplaymusic:/music/m/Tx5xdj6iyjjkgraor7bm242ao7m?signup=1&ln=1&play=1&utm_source=shazam&utm_medium=listen&utm_campaign=standard&PCamrefID=Subscription-Email-Mobile&PAffiliateID=100l3LE"
+        },
+        {
+          "name": "stream:googleallaccess:androidstore",
+          "type": "uri",
+          "uri": "https://play.google.com/music/m/Tx5xdj6iyjjkgraor7bm242ao7m?signup=1&utm_source=shazam&utm_medium=listen&utm_campaign=14dayFOPless&coupontype=vanity&coupon=SHAZAMTHREE&PAffiliateID=100l3LE&PCamrefID=Subscription-Email-Mobile"
+        }
+      ]
+    },
+    "googleradio": {
+      "actions": [
+        {
+          "name": "stream:googleradio:deeplink",
+          "type": "uri",
+          "uri": "https://play.google.com/music/r/m/Tx5xdj6iyjjkgraor7bm242ao7m?play=1&PAffiliateID=100l3LE&PCamrefID=Radio-App-Desktop"
+        }
+      ]
+    },
+    "rhapsody": {
+      "actions": [
+        {
+          "name": "stream:rhapsody:androiddeeplink",
+          "type": "intent",
+          "uri": "intent:#Intent;action=com.rhapsody.intents.MATCH;type=text/plain;S.com.rhapsody.intents.extras.PARTNER_CODE=shazam;S.com.rhapsody.intents.extras.TRACK_NAME=I%27m+The+One;S.com.rhapsody.intents.extras.ARTIST_NAME=DJ+Khaled;end"
+        },
+        {
+          "name": "stream:rhapsody:androidstore",
+          "type": "intent",
+          "uri": "intent://www.rhapsody.com/refer/shazam?trackName=I%27m+The+One&artistName=DJ+Khaled&placement=stream#Intent;scheme=http;action=android.intent.action.VIEW;end"
+        },
+        {
+          "name": "stream:rhapsody:iosdeeplink",
+          "type": "uri",
+          "uri": "rhap:///?action=match&partnerCode=shazam&trackName=I%27m+The+One&artistName=DJ+Khaled"
+        },
+        {
+          "name": "stream:rhapsody:iosstore",
+          "type": "uri",
+          "uri": "http://www.rhapsody.com/refer/shazam?trackName=I%27m+The+One&artistName=DJ+Khaled&placement=stream"
+        }
+      ]
+    },
+    "spotify": {
+      "actions": [
+        {
+          "name": "stream:spotify:play",
+          "type": "spotifyplay",
+          "uri": "spotify:track:72Q0FQQo32KJloivv5xge2"
+        },
+        {
+          "name": "stream:spotify:deeplink",
+          "type": "uri",
+          "uri": "spotify:track:72Q0FQQo32KJloivv5xge2"
+        },
+        {
+          "name": "stream:spotify:store",
+          "type": "uri",
+          "uri": "https://shz.am/rcc/spotifyinstallanddeeplink?language=en&country=US&platform=android&providername=Spotify&beaconid=5348615A-616D-3235-3830-44754D6D5973&inid=641C3824-EA77-3F13-9E1D-7792B6685326&campaign=US&adgroup=stream&deep_link=spotify:track:72Q0FQQo32KJloivv5xge2"
+        }
+      ]
+    }
+  },
+  "type": "MUSIC",
+  "url": "http://www.shazam.com/track/352190393/im-the-one",
+  "urlparams": {
+    "{trackartist}": "DJ+Khaled",
+    "{tracktitle}": "I%27m+The+One"
+  }
+}
