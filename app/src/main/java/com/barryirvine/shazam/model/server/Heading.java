@@ -2,7 +2,7 @@ package com.barryirvine.shazam.model.server;
 
 import com.google.gson.annotations.SerializedName;
 
-class Heading {
+public class Heading {
 
     @SerializedName("subtitle")
     private String mSubtitle;
@@ -10,11 +10,11 @@ class Heading {
     @SerializedName("title")
     private String mTitle;
 
-    String getSubtitle() {
+    public String getSubtitle() {
         return mSubtitle;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return mTitle;
     }
 }

@@ -2,7 +2,7 @@ package com.barryirvine.shazam.model.server;
 
 import com.google.gson.annotations.SerializedName;
 
-class Track {
+public class Track {
 
     @SerializedName("images")
     private Images mImages;
@@ -10,11 +10,11 @@ class Track {
     @SerializedName("heading")
     private Heading mHeading;
 
-    Images getImages() {
+    public Images getImages() {
         return mImages;
     }
 
-    Heading getHeading() {
+    public Heading getHeading() {
         return mHeading;
     }
 }
