@@ -5,6 +5,7 @@ import com.barryirvine.shazam.dagger.module.InteractorModule;
 import com.barryirvine.shazam.dagger.module.MainModule;
 import com.barryirvine.shazam.dagger.module.MapperModule;
 import com.barryirvine.shazam.dagger.module.NetModule;
+import com.barryirvine.shazam.ui.activity.TrackDetailsActivity;
 import com.barryirvine.shazam.ui.fragment.ChartFragment;
 
 import javax.inject.Singleton;
@@ -17,5 +18,7 @@ import dagger.Component;
 public interface AppComponent {
 
     void inject(final ChartFragment fragment);
+
+    void inject(final TrackDetailsActivity activity);
 
 }

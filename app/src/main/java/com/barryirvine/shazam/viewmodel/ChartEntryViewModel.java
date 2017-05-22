@@ -1,9 +1,16 @@
 package com.barryirvine.shazam.viewmodel;
 
+import android.app.Activity;
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.View;
 
 import com.barryirvine.shazam.model.local.ChartEntry;
+import com.barryirvine.shazam.ui.UiUtils;
+import com.barryirvine.shazam.ui.activity.TrackDetailsActivity;
+import com.barryirvine.shazam.ui.contract.MainContract;
 
 /**
  * View Model for {@link ChartEntry} Remember to use the {@link Bindable} annotation for all getters and to do
@@ -13,9 +20,12 @@ import com.barryirvine.shazam.model.local.ChartEntry;
 public class ChartEntryViewModel extends BaseObservable {
 
     private final ChartEntry mChartEntry;
+    private final MainContract.Presenter mPresenter;
 
-    public ChartEntryViewModel(final ChartEntry chartEntry) {
+    // The presenter is nullable because I've lazily used the same view model on the detail screen
+    public ChartEntryViewModel(@NonNull final ChartEntry chartEntry, @Nullable final MainContract.Presenter presenter) {
         mChartEntry = chartEntry;
+        mPresenter = presenter;
     }
 
     @Bindable
@@ -33,8 +43,11 @@ public class ChartEntryViewModel extends BaseObservable {
         return mChartEntry.getImageUrl();
     }
 
-    public void onClick() {
-        //TODO: Show detail view);
+    public void onClick(final View view) {
+        if (mPresenter != null && mPresenter.areClicksEnabled()) {
+            TrackDetailsActivity.start(view.getContext(), mChartEntry, UiUtils.getArtworkActivityOptions((Activity) view.getContext(), view));
+            mPresenter.setClicksEnabled(false);
+        }
     }
 
 }
