@@ -10,6 +10,8 @@ public class Track {
     @SerializedName("heading")
     private Heading mHeading;
 
+    //TODO: Some of the results are returning no images but have a cover art
+    // url for each of the stores I could use one of these as a fallback
     public Images getImages() {
         return mImages;
     }

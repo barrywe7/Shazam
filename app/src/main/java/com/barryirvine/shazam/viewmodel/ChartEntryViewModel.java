@@ -32,4 +32,9 @@ public class ChartEntryViewModel extends BaseObservable {
     public String getImageUrl() {
         return mChartEntry.getImageUrl();
     }
+
+    public void onClick() {
+        //TODO: Show detail view);
+    }
+
 }
